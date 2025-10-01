@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+:root {
+  font-family: Galdeano, sans-serif;
+  scroll-behavior: smooth;
+}

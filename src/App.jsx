@@ -1,11 +1,13 @@
-import { useState } from "react";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar.jsx";
 
 function App() {
   return (
     <>
-      <div>
-        <h1>Hello</h1>
-      </div>
+      <Router>
+        <NavBar />
+      </Router>
     </>
   );
 }
