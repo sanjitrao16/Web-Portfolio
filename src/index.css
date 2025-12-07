@@ -3,4 +3,42 @@
 :root {
   font-family: Galdeano, sans-serif;
   scroll-behavior: smooth;
+  background-color: #110f10;
+  color: #e8e8e8;
+}
+
+.Home-Section {
+  background-image: url("./assets/Background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 80vh;
+}
+
+@media (max-width: 640px) {
+  .Home-Section {
+    background-image: url("./assets/Mobile background.png");
+    background-attachment: scroll;
+    min-height: 60vh;
+  }
+}
+
+.NavBar,
+.Project-Links {
+  font-family:
+    Encode Sans Condensed,
+    sans-serif;
+}
+
+.About-Section,
+.Project-Section,
+.Skills-Section,
+.Achievements-Section,
+.Contact-Section {
+  font-family: Montserrat, sans-serif;
+}
+
+.Header {
+  font-family: Galdeano, sans-serif;
 }
