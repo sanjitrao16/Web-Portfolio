@@ -18,7 +18,7 @@
 
 @media (max-width: 640px) {
   .Home-Section {
-    background-image: url("./assets/Mobile background.png");
+    background-image: url("./assets/Mobile Background.png");
     background-attachment: scroll;
     min-height: 60vh;
   }

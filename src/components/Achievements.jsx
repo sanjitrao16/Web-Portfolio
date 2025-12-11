@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import Medal from "../assets/Title_Icon.svg";
-import Trophy from "../assets/Title_Icon.svg";
-import Cert from "../assets/Title_Icon.svg";
+import Club from "../assets/TeamIcon.svg";
+import Trophy from "../assets/Trophy.svg";
+import Cert from "../assets/Certificate.svg";
 
 export default function Achievements() {
   const cards = [
@@ -29,7 +29,7 @@ export default function Achievements() {
     {
       id: 3,
       title: "Club Related",
-      icon: Medal,
+      icon: Club,
       items: [
         "Organzied and delivered a 90-min extensive workshop on Git and GitHub",
         "Part of the organizing team of TechBiz'25 hackathon",
@@ -39,10 +39,10 @@ export default function Achievements() {
   ];
 
   return (
-    <section className="Achievements-Section py-12 px-6 bg-gradient-to-b from-[#110f10] via-[#141314] to-[#110f10]">
+    <section className="Achievements-Section py-12 px-6 bg-gradient-to-r from-[#27729a] via-[#528b8b] to-[#005c7b]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8">
-          <h2 className="Header text-3xl md:text-4xl font-bold text-[#e8e8e8]">
+          <h2 className="Header text-3xl md:text-4xl font-bold text-[#110f10]">
             Achievements and Others
           </h2>
         </div>
@@ -131,36 +131,34 @@ function Carousel({ cards }) {
     >
       <div className="overflow-hidden">
         <div
-          className="flex gap-6 transition-transform duration-500 ease-out"
+          className="flex gap-4 md:gap-6 transition-transform duration-500 ease-out px-4 md:px-0"
           style={{ transform: `translateX(${translate}%)` }}
         >
           {cards.map((c, i) => {
             const isActive = i === index;
+            const cardStyle =
+              visible === 1 ? { width: `100%` } : { width: `${itemWidth}%` };
             return (
-              <div
-                key={c.id}
-                className="flex-shrink-0"
-                style={{ width: `${itemWidth}%` }}
-              >
+              <div key={c.id} className="flex-shrink-0" style={cardStyle}>
                 <div
-                  className={`group rounded-2xl p-6 backdrop-blur-md bg-white/3 border border-[#80f9ff]/10 hover:border-[#80f9ff]/30 transition-all duration-300 shadow-md mx-2 transform ${isActive ? "scale-100" : "scale-90 opacity-80"}`}
+                  className={`group rounded-2xl p-4 md:p-6 backdrop-blur-md bg-white/3 border border-[#80f9ff]/10 hover:border-[#80f9ff]/30 transition-all duration-300 shadow-md transform ${isActive ? "scale-100" : "scale-95 opacity-85"} ${visible === 1 ? "mx-auto max-w-md" : "mx-2"}`}
                 >
-                  <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center gap-3 mb-4">
                     <div
-                      className={`w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-br ${c.accent} border border-[#ffffff10]`}
+                      className={`w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center bg-gradient-to-br ${c.accent} border border-[#ffffff10]`}
                     >
                       <img
                         src={c.icon}
                         alt={`${c.title} icon`}
-                        className="w-6 h-6"
+                        className="w-5 h-5 md:w-6 md:h-6"
                       />
                     </div>
-                    <h3 className="text-lg font-semibold text-[#e8e8e8]">
+                    <h3 className="text-base md:text-lg font-extrabold text-[#110f10]">
                       {c.title}
                     </h3>
                   </div>
 
-                  <ul className="text-sm text-[#9aa0a6] space-y-2 list-inside list-disc">
+                  <ul className="text-sm md:text-base text-[#110f10] space-y-2 list-inside list-disc">
                     {c.items.map((it, idx) => (
                       <li key={idx}>{it}</li>
                     ))}

@@ -15,7 +15,10 @@ export default function ContactUs() {
   }
 
   return (
-    <section className="Contact-Section py-12 px-6 bg-gradient-to-b from-[#110f10] via-[#141314] to-[#110f10]">
+    <section
+      id="contact-me"
+      className="Contact-Section py-12 px-6 bg-gradient-to-b from-[#110f10] via-[#141314] to-[#110f10]"
+    >
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-8">
           <h2 className="Header text-2xl md:text-3xl font-bold text-[#e8e8e8]">
