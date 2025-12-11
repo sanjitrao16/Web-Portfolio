@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
 import Home from "./components/Home.jsx";
 import About from "./components/About.jsx";
@@ -12,16 +11,14 @@ import Footer from "./components/Footer.jsx";
 function App() {
   return (
     <>
-      <Router>
-        <NavBar />
-        <Home />
-        <About />
-        <Skills />
-        <Project />
-        <Achievements />
-        <ContactUs />
-        <Footer />
-      </Router>
+      <NavBar />
+      <Home />
+      <About />
+      <Skills />
+      <Project />
+      <Achievements />
+      <ContactUs />
+      <Footer />
     </>
   );
 }
