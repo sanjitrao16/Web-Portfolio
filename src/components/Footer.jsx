@@ -1,6 +1,6 @@
 import Title from "../assets/Title_Icon.svg";
 import GitHub from "../assets/GitHub.svg";
-import LinkedIn from "../assets/LinkedIn.svg";
+import LinkedIn from "../assets/Linkedin.svg";
 
 export default function Footer() {
   return (
