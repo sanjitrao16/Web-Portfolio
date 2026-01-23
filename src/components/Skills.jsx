@@ -15,7 +15,15 @@ export default function Skills() {
     },
     {
       category: "Backend & Databases",
-      skills: ["Node.js", "Express", "MongoDB", "MySQL", "REST APIs", "Django"],
+      skills: [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "MySQL",
+        "REST APIs",
+        "Django",
+        "Python-Flask",
+      ],
       color: "from-blue-500/20 to-blue-500/5",
       borderColor: "border-blue-400/30",
       hoverBorder: "hover:border-blue-400/60",
@@ -42,7 +50,14 @@ export default function Skills() {
     },
     {
       category: "Data & AI",
-      skills: ["Machine Learning", "AI", "Numpy", "Pandas", "OpenCV"],
+      skills: [
+        "Machine Learning",
+        "AI",
+        "Numpy",
+        "Pandas",
+        "OpenCV",
+        "Python Tesseract",
+      ],
       color: "from-pink-500/20 to-pink-500/5",
       borderColor: "border-pink-400/30",
       hoverBorder: "hover:border-pink-400/60",
@@ -51,7 +66,7 @@ export default function Skills() {
     },
     {
       category: "Other Technologies",
-      skills: ["Chrome Extensions", "MERN Stack"],
+      skills: ["Chrome Extensions", "MERN Stack", "Local LLMs"],
       color: "from-orange-500/20 to-orange-500/5",
       borderColor: "border-orange-400/30",
       hoverBorder: "hover:border-orange-400/60",

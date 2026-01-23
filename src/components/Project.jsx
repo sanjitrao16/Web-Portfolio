@@ -51,12 +51,20 @@ export default function Project() {
     },
     {
       id: 4,
-      title: "GeeksForGeeks Club Offical Website",
+      title: "Hostel Assist Application",
       description:
-        "Developed and built the official website of Amrita Chennai's GeeksForGeeks Campus Body Student Club, thereby establishing a central hub for club activities and information. The website is created using ReactJS and TailwindCSS",
-      technologies: ["ReactJS", "JavaScript", "TailwindCSS"],
-      github:
-        "https://github.com/sanjitrao16/GeeksForGeeks-Amrita-Club-Website",
+        "Engineered and developed a distributed systems based hostel utility application, which serves as a single platform for all hostel related problems and queries. The application demonstrates a variety of distributed systems concepts and follows some of the key principles like decentralized architecture, concurrency and resource sharing.",
+      technologies: [
+        "Java",
+        "Java Swing (Frontend)",
+        "Python Flask",
+        "ReactJS (Frontend)",
+        "System Design",
+        "Peer-to-Peer",
+        "Java RMI",
+        "Remote Procedure Call",
+      ],
+      github: "https://github.com/sanjitrao16/Hostel-Assist-Application",
     },
   ];
 

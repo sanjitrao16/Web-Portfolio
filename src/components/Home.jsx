@@ -2,6 +2,7 @@ import Profile from "../assets/Portfolio-Profile.png";
 import LinkedIn from "../assets/Linkedin.svg";
 import GitHub from "../assets/GitHub.svg";
 import Email from "../assets/Email.svg";
+import Resume from "../assets/Resume.pdf";
 
 export default function Home() {
   return (
@@ -29,13 +30,13 @@ export default function Home() {
 
         <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start gap-4 sm:gap-10 mt-6 sm:ml-7">
           <a
-            href=""
+            href="mailto:sanjitrao1605@gmail.com"
             className="text-black bg-[#80f9ff] py-2 px-6 rounded-xl inline-block text-center"
           >
             Hire Me
           </a>
           <a
-            href=""
+            href={Resume}
             className="text-[#e8e8e8] border-[#e8e8e8] border-2 py-2 px-6 rounded-xl hover:bg-[#e8e8e8] hover:text-[#110f10] transition duration-300 inline-block text-center"
           >
             Resume

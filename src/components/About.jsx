@@ -64,6 +64,7 @@ export default function About() {
                 </h3>
               </div>
               <p className="text-sm md:text-base text-[#8b8b8b] leading-relaxed">
+                <span>Pre-final year at</span>
                 <span className="block text-[#e8e8e8] font-semibold mb-2">
                   Amrita Vishwa Vidyapeetham
                 </span>
@@ -73,7 +74,7 @@ export default function About() {
                 <span className="block mb-2">2023 – Present</span>
                 <span className="block">
                   CGPA:{" "}
-                  <span className="text-[#80f9ff] font-semibold">8.97</span>
+                  <span className="text-[#80f9ff] font-semibold">8.99</span>
                 </span>
               </p>
             </div>
