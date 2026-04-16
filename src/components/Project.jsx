@@ -20,9 +20,9 @@ export default function Project() {
     },
     {
       id: 2,
-      title: "Tantrotsav 2025 Tech Fest Website",
+      title: "Tantrotsav 2025 & 2026 Tech Fest Website",
       description:
-        'Developed the official website of my college\'s flagship annual tech event "Tantrotsav 2025" using the MERN stack, delivering a seamless and modern user experience for thousands of participants. Also collaborated with 3 of my college-mates in the development of this project.',
+        'Developed the official website of my college\'s flagship annual tech event "Tantrotsav 2025" and "Tantrotsav 2026" using the MERN stack, delivering a seamless and modern user experience for thousands of participants. Also collaborated with 3 of my college-mates in the development of this project.',
       technologies: [
         "ReactJS",
         "JavaScript",
@@ -51,6 +51,22 @@ export default function Project() {
     },
     {
       id: 4,
+      title: "AethelGuard - Digital Watermarking System",
+      description:
+        "AethelGuard is a cryptographically secured digital watermarking system for image ownership protection and traitor tracing. It embeds an invisible, encrypted watermark into images at the point of distribution — each recipient receives a uniquely marked copy tied to their identity. he system is built around two Python engines — Bifrost (embedder) and Heimdall (extractor/verifier)",
+      technologies: [
+        "Python",
+        "Python Flask",
+        "NumPy",
+        "PyWavelets",
+        "PostgresSQL",
+        "RSA-2048 and AES-256",
+        "Cryptography",
+      ],
+      github: "https://github.com/sanjitrao16/Aethelguard",
+    },
+    {
+      id: 5,
       title: "Hostel Assist Application",
       description:
         "Engineered and developed a distributed systems based hostel utility application, which serves as a single platform for all hostel related problems and queries. The application demonstrates a variety of distributed systems concepts and follows some of the key principles like decentralized architecture, concurrency and resource sharing.",
@@ -65,6 +81,23 @@ export default function Project() {
         "Remote Procedure Call",
       ],
       github: "https://github.com/sanjitrao16/Hostel-Assist-Application",
+    },
+    {
+      id: 6,
+      title: "Waste Detection and Classification Model",
+      description:
+        "Developed a basic machine-learning model using the YOLOv8 framework, that effectively detects and classifies waste across 9 waste categories under a diverse range of images taken under a variety of environments, like, cluttered environments, poor lighting. The model is trained on a publicly available dataset which has been further reduced manually, upon which image annotating process has been carried out before training using YOLOv8.",
+      technologies: [
+        "Python",
+        "Machine Learning",
+        "Image Processing",
+        "YOLO",
+        "OpenCV",
+        "Label Studio",
+        "Data Pre-Processing",
+      ],
+      github:
+        "https://github.com/sanjitrao16/Waste-Detection-and-Classification-ML-Model",
     },
   ];
 

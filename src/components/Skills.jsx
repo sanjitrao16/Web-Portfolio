@@ -23,6 +23,7 @@ export default function Skills() {
         "REST APIs",
         "Django",
         "Python-Flask",
+        "PostgresSQL",
       ],
       color: "from-blue-500/20 to-blue-500/5",
       borderColor: "border-blue-400/30",

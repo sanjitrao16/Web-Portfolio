@@ -12,6 +12,7 @@ export default function Achievements() {
       items: [
         "Participant of IndustriAI 24 hour hackathon - IIT Madras",
         "Winner of Technopoly 2025 in Tantrotsav 2025",
+        "Winner of Rapid Coding Challenge 2026 in Tantrotsav 2026",
       ],
       accent: "from-[#00d9ff]/10 to-[#80f9ff]/4",
     },
@@ -33,13 +34,14 @@ export default function Achievements() {
       items: [
         "Organzied and delivered a 90-min extensive workshop on Git and GitHub",
         "Part of the organizing team of TechBiz'25 hackathon",
+        "Organized Code Auction event as part of Tantrotsav 2026",
       ],
       accent: "from-[#80f9ff]/10 to-[#80f9ff]/4",
     },
   ];
 
   return (
-    <section className="Achievements-Section py-12 px-6 bg-gradient-to-r from-[#27729a] via-[#528b8b] to-[#005c7b]">
+    <section className="Achievements-Section py-12 px-6 bg-gradient-to-r from-[#4f98c0] via-[#4eb7b7] to-[#0083ae]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8">
           <h2 className="Header text-3xl md:text-4xl font-bold text-[#110f10]">
@@ -63,7 +65,7 @@ function Carousel({ cards }) {
   useEffect(() => {
     function onResize() {
       setVisible(
-        window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1
+        window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1,
       );
     }
     onResize();
