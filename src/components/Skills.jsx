@@ -42,7 +42,15 @@ export default function Skills() {
     },
     {
       category: "Tools & Platforms",
-      skills: ["Git", "GitHub", "VS Code", "Postman", "Linux"],
+      skills: [
+        "Git",
+        "GitHub",
+        "VS Code",
+        "Postman",
+        "Linux",
+        "Firebase",
+        "Supabase",
+      ],
       color: "from-emerald-500/20 to-emerald-500/5",
       borderColor: "border-emerald-400/30",
       hoverBorder: "hover:border-emerald-400/60",
@@ -108,7 +116,7 @@ export default function Skills() {
 
   return (
     <section id="skills">
-      <div className="Skills-Section bg-gradient-to-b from-[#110f10] via-[#1a1819] to-[#110f10] py-16 px-6">
+      <div className="Skills-Section bg-linear-to-b from-[#110f10] via-[#1a1819] to-[#110f10] py-16 px-6">
         <div className="max-w-6xl mx-auto">
           {/* Header - Centered */}
           <div className="text-center mb-16">
@@ -116,7 +124,7 @@ export default function Skills() {
               Skills & Competencies
             </h2>
             <div className="flex justify-center">
-              <div className="w-24 h-1 bg-gradient-to-r from-transparent via-[#80f9ff] to-transparent"></div>
+              <div className="w-24 h-1 bg-linear-to-r from-transparent via-[#80f9ff] to-transparent"></div>
             </div>
           </div>
           {/* Skills Grid */}
@@ -124,7 +132,7 @@ export default function Skills() {
             {skillCategories.map((category, idx) => (
               <div
                 key={idx}
-                className={`group backdrop-blur-md bg-gradient-to-br ${category.color} border ${category.borderColor} ${category.hoverBorder} rounded-xl p-6 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#80f9ff]/5`}
+                className={`group backdrop-blur-md bg-linear-to-br ${category.color} border ${category.borderColor} ${category.hoverBorder} rounded-xl p-6 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#80f9ff]/5`}
               >
                 <div className="flex items-center gap-3 mb-5">
                   <div
@@ -160,7 +168,7 @@ export default function Skills() {
                   href={platform.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`group backdrop-blur-md bg-gradient-to-br ${platform.color} border ${platform.borderColor} ${platform.hoverBorder} rounded-xl p-8 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#80f9ff]/5 text-center cursor-pointer transform hover:scale-105`}
+                  className={`group backdrop-blur-md bg-linear-to-br ${platform.color} border ${platform.borderColor} ${platform.hoverBorder} rounded-xl p-8 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#80f9ff]/5 text-center cursor-pointer transform hover:scale-105`}
                 >
                   <div
                     className={`mb-4 flex items-center justify-center w-20 h-20 rounded-full mx-auto border-2 ${platform.borderColor} bg-white/5`}

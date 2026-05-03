@@ -41,7 +41,7 @@ export default function Achievements() {
   ];
 
   return (
-    <section className="Achievements-Section py-12 px-6 bg-gradient-to-r from-[#4f98c0] via-[#4eb7b7] to-[#0083ae]">
+    <section className="Achievements-Section py-12 px-6 bg-linear-to-r from-[#4f98c0] via-[#4eb7b7] to-[#0083ae]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8">
           <h2 className="Header text-3xl md:text-4xl font-bold text-[#110f10]">
@@ -141,13 +141,13 @@ function Carousel({ cards }) {
             const cardStyle =
               visible === 1 ? { width: `100%` } : { width: `${itemWidth}%` };
             return (
-              <div key={c.id} className="flex-shrink-0" style={cardStyle}>
+              <div key={c.id} className="shrink-0" style={cardStyle}>
                 <div
                   className={`group rounded-2xl p-4 md:p-6 backdrop-blur-md bg-white/3 border border-[#80f9ff]/10 hover:border-[#80f9ff]/30 transition-all duration-300 shadow-md transform ${isActive ? "scale-100" : "scale-95 opacity-85"} ${visible === 1 ? "mx-auto max-w-md" : "mx-2"}`}
                 >
                   <div className="flex items-center gap-3 mb-4">
                     <div
-                      className={`w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center bg-gradient-to-br ${c.accent} border border-[#ffffff10]`}
+                      className={`w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center bg-linear-to-br ${c.accent} border border-[#ffffff10]`}
                     >
                       <img
                         src={c.icon}

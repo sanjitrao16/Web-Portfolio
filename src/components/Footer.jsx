@@ -4,7 +4,7 @@ import LinkedIn from "../assets/Linkedin.svg";
 
 export default function Footer() {
   return (
-    <footer className="mt-12 border-t border-[#ffffff08] py-6 bg-gradient-to-b from-transparent to-[#0b0b0b]/20">
+    <footer className="mt-12 border-t border-[#ffffff08] py-6 bg-linear-to-b from-transparent to-[#0b0b0b]/20">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="text-sm flex items-center text-[#9aa0a6]">
           <img src={Title} alt="Title" width="50px" height="50px" />

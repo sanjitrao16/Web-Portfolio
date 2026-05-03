@@ -103,14 +103,14 @@ export default function Project() {
 
   return (
     <section id="projects">
-      <div className="Project-Section min-h-screen bg-gradient-to-b from-[#110f10] via-[#1a1819] to-[#110f10] py-16 px-6">
+      <div className="Project-Section min-h-screen bg-linear-to-b from-[#110f10] via-[#1a1819] to-[#110f10] py-16 px-6">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="Header text-2xl md:text-5xl font-bold text-[#e8e8e8] mb-4">
               Projects
             </h1>
-            <div className="w-20 h-1 bg-gradient-to-r from-transparent via-[#80f9ff] to-transparent mx-auto mb-6"></div>
+            <div className="w-20 h-1 bg-linear-to-r from-transparent via-[#80f9ff] to-transparent mx-auto mb-6"></div>
             <p className="text-[#8b8b8b] text-base md:text-lg max-w-2xl mx-auto">
               Explore some of my recent projects...
             </p>
@@ -120,14 +120,14 @@ export default function Project() {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="group backdrop-blur-md bg-gradient-to-br from-white/5 to-white/[0.02] border border-[#80f9ff]/20 rounded-2xl overflow-hidden hover:border-[#80f9ff]/50 transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-[#80f9ff]/10 flex flex-col h-full"
+                className="group backdrop-blur-md bg-linear-to-br from-white/5 to-white/2 border border-[#80f9ff]/20 rounded-2xl overflow-hidden hover:border-[#80f9ff]/50 transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-[#80f9ff]/10 flex flex-col h-full"
               >
-                <div className="h-1 bg-gradient-to-r from-[#80f9ff] via-[#00d9ff] to-transparent"></div>
+                <div className="h-1 bg-linear-to-r from-[#80f9ff] via-[#00d9ff] to-transparent"></div>
                 <div className="p-8 flex flex-col h-full">
                   <h3 className="text-xl sm:text-2xl font-bold text-[#e8e8e8] mb-3 group-hover:text-[#80f9ff] transition-colors duration-300">
                     {project.title}
                   </h3>
-                  <p className="text-[#8b8b8b] text-sm sm:text-base leading-relaxed mb-6 flex-grow">
+                  <p className="text-[#8b8b8b] text-sm sm:text-base leading-relaxed mb-6 grow">
                     {project.description}
                   </p>
                   <div className="mb-6">
@@ -183,7 +183,7 @@ export default function Project() {
               </div>
             ))}
           </div>
-          <div className="mt-12 text-center backdrop-blur-md bg-gradient-to-r from-[#80f9ff]/8 to-transparent border border-[#80f9ff]/18 rounded-xl p-6 hover:border-[#80f9ff]/30 transition-colors duration-200">
+          <div className="mt-12 text-center backdrop-blur-md bg-linear-to-r from-[#80f9ff]/8 to-transparent border border-[#80f9ff]/18 rounded-xl p-6 hover:border-[#80f9ff]/30 transition-colors duration-200">
             <h2 className="text-xl md:text-3xl font-bold text-[#e8e8e8] mb-3">
               Want to see more?
             </h2>
@@ -195,7 +195,7 @@ export default function Project() {
               href="https://github.com/sanjitrao16"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-6 py-2 bg-gradient-to-r from-[#80f9ff] to-[#00d9ff] text-black font-semibold rounded-md hover:shadow-md hover:shadow-[#80f9ff]/30 transition-all duration-200"
+              className="inline-block px-6 py-2 bg-linear-to-r from-[#80f9ff] to-[#00d9ff] text-black font-semibold rounded-md hover:shadow-md hover:shadow-[#80f9ff]/30 transition-all duration-200"
             >
               Visit My GitHub
             </a>
