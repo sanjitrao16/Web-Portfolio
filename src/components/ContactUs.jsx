@@ -5,14 +5,25 @@ export default function ContactUs() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  function handleSubmit(e) {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // No backend wired — just show a friendly confirmation.
-    alert("Thanks for reaching out! I'll get back to you soon.");
+
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, message }),
+    });
+
+    if (response.ok) {
+      alert("Message sent.");
+    } else {
+      alert("Something went wrong.");
+    }
+
     setName("");
     setEmail("");
     setMessage("");
-  }
+  };
 
   return (
     <section
