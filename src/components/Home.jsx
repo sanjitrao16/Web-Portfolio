@@ -30,7 +30,7 @@ export default function Home() {
 
         <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start gap-4 sm:gap-10 mt-6 sm:ml-7">
           <a
-            href="mailto:sanjitrao1605@gmail.com"
+            href="#contact-me"
             className="text-black bg-[#80f9ff] py-2 px-6 rounded-xl inline-block text-center"
           >
             Hire Me

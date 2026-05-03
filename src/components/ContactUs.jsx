@@ -28,7 +28,7 @@ export default function ContactUs() {
   return (
     <section
       id="contact-me"
-      className="Contact-Section py-12 px-6 bg-gradient-to-b from-[#110f10] via-[#141314] to-[#110f10]"
+      className="Contact-Section py-12 px-6 bg-linear-to-b from-[#110f10] via-[#141314] to-[#110f10]"
     >
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-8">
@@ -116,7 +116,7 @@ export default function ContactUs() {
             <div className="flex items-center justify-between gap-4">
               <button
                 type="submit"
-                className="inline-flex items-center gap-2 bg-gradient-to-br from-[#00d9ff] to-[#80f9ff] text-[#0b0b0b] px-4 py-2 rounded-lg font-semibold shadow-sm hover:brightness-110 transition"
+                className="inline-flex items-center gap-2 bg-linear-to-br from-[#00d9ff] to-[#80f9ff] text-[#0b0b0b] px-4 py-2 rounded-lg font-semibold shadow-sm hover:brightness-110 transition"
               >
                 Send Message
               </button>
